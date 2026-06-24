@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onda Pura Surf School – Ericeira, Portugal</title>
+
+  <!-- Usercentrics Consent Management -->
+  <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="dwhftxbB6cSXvM" async></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'page_view',
+      page_title: 'Onda Pura Surf School – Ericeira, Portugal',
+      page_location: window.location.href,
+      page_referrer: document.referrer || undefined
+    });
+  </script>
+  <!-- (Replace GTM-XXXXXXX with your GTM container ID) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ocean: #0077b6;
+      --ocean-dark: #005f8e;
+      --sand: #f4e9d8;
+      --text: #1a1a2e;
+      --muted: #555;
+      --white: #ffffff;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      min-height: 100vh;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(to bottom, rgba(0,30,60,.55) 0%, rgba(0,60,100,.3) 60%, rgba(0,0,0,.55) 100%),
+        url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1600&q=80') center/cover no-repeat;
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 680px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,.18);
+      border: 1px solid rgba(255,255,255,.35);
+      backdrop-filter: blur(6px);
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: .8rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 12px rgba(0,0,0,.4);
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.6;
+      opacity: .9;
+      margin-bottom: 40px;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--ocean);
+      color: var(--white);
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .02em;
+      transition: background .2s;
+    }
+    .hero-cta:hover { background: var(--ocean-dark); }
+
+    /* ── PERKS ── */
+    .perks {
+      background: var(--sand);
+      padding: 64px 20px;
+      text-align: center;
+    }
+
+    .perks h2 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .perks-subtitle {
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .perks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .perk-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+
+    .perk-icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .perk-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .perk-card p { font-size: .88rem; color: var(--muted); line-height: 1.5; }
+
+    /* ── FORM SECTION ── */
+    .form-section {
+      padding: 80px 20px;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .form-section h2 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .form-section p {
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: .85rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    input {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: var(--text);
+      transition: border-color .2s, box-shadow .2s;
+      background: var(--white);
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--ocean);
+      box-shadow: 0 0 0 3px rgba(0,119,182,.15);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+      background: var(--ocean);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background .2s, transform .1s;
+      font-family: inherit;
+    }
+
+    .submit-btn:hover { background: var(--ocean-dark); }
+    .submit-btn:active { transform: scale(.98); }
+
+    .privacy-note {
+      font-size: .78rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 14px;
+    }
+
+    /* ── THANK YOU ── */
+    .thank-you {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .thank-you .check { font-size: 4rem; margin-bottom: 16px; }
+    .thank-you h3 { font-size: 1.6rem; margin-bottom: 10px; }
+    .thank-you p { color: var(--muted); line-height: 1.6; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      font-size: .82rem;
+      color: var(--muted);
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="badge">Ericeira World Surfing Reserve</span>
+    <h1>Learn to Surf<br/>in Portugal</h1>
+    <p>Expert instructors, world-class waves, and unforgettable sessions on Ericeira's iconic breaks. From first-timers to intermediate surfers — we've got your wave.</p>
+    <a href="#contact" class="hero-cta">Get Course Info</a>
+  </div>
+</section>
+
+<!-- PERKS -->
+<section class="perks">
+  <h2>Why Onda Pura?</h2>
+  <p class="perks-subtitle">Everything you need to catch your first (or best) wave.</p>
+  <div class="perks-grid">
+    <div class="perk-card">
+      <div class="perk-icon">🏄</div>
+      <h3>All Levels Welcome</h3>
+      <p>From absolute beginners to surfers working on their barrel — tailored coaching for every stage.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">📍</div>
+      <h3>Prime Location</h3>
+      <p>Based in Ericeira, Europe's only World Surfing Reserve — consistent waves year-round.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">🧑‍🏫</div>
+      <h3>Certified Instructors</h3>
+      <p>ISA-certified coaches with 10+ years of teaching experience on the Portuguese coast.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">🎽</div>
+      <h3>All Equipment Included</h3>
+      <p>Boards, wetsuits, and roof rack transfers — just show up ready to surf.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="form-section" id="contact">
+  <h2>Request Info</h2>
+  <p>Drop your details below and we'll send you course dates, pricing, and everything you need to book your session.</p>
+
+  <div id="form-container">
+    <form id="lead-form" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+351 900 000 000" required autocomplete="tel" />
+      </div>
+      <button type="submit" class="submit-btn">Send My Request →</button>
+      <p class="privacy-note">We respect your privacy. No spam, ever. Your data is only used to respond to your enquiry.</p>
+    </form>
+  </div>
+
+  <div class="thank-you" id="thank-you">
+    <div class="check">🤙</div>
+    <h3>You're on the list, surfer!</h3>
+    <p>Thanks for reaching out. We'll send course details, pricing, and available dates to your inbox within 24 hours.<br/>See you in the water!</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Onda Pura Surf School · Ericeira, Portugal · <a href="mailto:hello@surfingpt.xyz">hello@surfingpt.xyz</a></p>
+</footer>
+
+<script>
+  // ── Utility: SHA-256 hash for enhanced conversions ──────────────────────────
+  async function sha256(value) {
+    const normalized = value.trim().toLowerCase();
+    const msgBuffer = new TextEncoder().encode(normalized);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  // ── Form submit ─────────────────────────────────────────────────────────────
+  document.getElementById('lead-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const name     = document.getElementById('name').value.trim();
+    const email    = document.getElementById('email').value.trim();
+    const phone    = document.getElementById('phone').value.trim();
+
+    // Basic validation
+    if (!name || !email || !phone) {
+      alert('Please fill in all fields before submitting.');
+      return;
+    }
+
+    // Split name into first / last for enhanced conversions
+    const nameParts = name.split(' ');
+    const firstName = nameParts[0] || '';
+    const lastName  = nameParts.slice(1).join(' ') || '';
+
+    // Normalise phone: strip spaces, dashes, parentheses; keep leading +
+    const phoneNorm = phone.replace(/[\s\-().]/g, '');
+
+    // Hash PII for enhanced conversions / advanced matching
+    const [hashedEmail, hashedPhone, hashedFirstName, hashedLastName] = await Promise.all([
+      sha256(email),
+      sha256(phoneNorm),
+      sha256(firstName),
+      sha256(lastName)
+    ]);
+
+    // ── dataLayer push: generate_lead ──────────────────────────────────────
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'generate_lead',
+
+      // Human-readable fields (for GA4 / GTM preview / debugging)
+      lead_source: 'website_form',
+      form_id: 'contact_form',
+      form_name: 'Surf School Info Request',
+
+      // Enhanced conversions (hashed PII — safe to send to Google)
+      user_data: {
+        email_address: hashedEmail,
+        phone_number:  hashedPhone,
+        first_name:    hashedFirstName,
+        last_name:     hashedLastName
+      },
+
+      // Advanced matching (Meta Pixel / CAPI — hashed)
+      advanced_matching: {
+        em:  hashedEmail,
+        ph:  hashedPhone,
+        fn:  hashedFirstName,
+        ln:  hashedLastName
+      },
+
+      // Raw (unhashed) — only use in server-side tags behind a secure sGTM container
+      user_data_raw: {
+        email:      email,
+        phone:      phoneNorm,
+        first_name: firstName,
+        last_name:  lastName
+      }
+    });
+
+    // ── Show thank-you state ──────────────────────────────────────────────
+    document.getElementById('form-container').style.display = 'none';
+    document.getElementById('thank-you').style.display      = 'block';
+  });
+</script>
+
+</body>
+</html>
