@@ -447,13 +447,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <script>
-  // ── Sequential user_id ──────────────────────────────────────────────────────
-  function getNextUserId() {
-    const n = (parseInt(localStorage.getItem('crm_user_seq') || '0', 10)) + 1;
-    localStorage.setItem('crm_user_seq', String(n));
-    return 'user_test_' + String(n).padStart(3, '0');
-  }
-
   // ── Utility: SHA-256 hash for enhanced conversions ──────────────────────────
   async function sha256(value) {
     const normalized = value.trim().toLowerCase();
@@ -529,7 +522,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
     // ── Save to CRM (localStorage) ────────────────────────────────────────
-    const userId = getNextUserId();
+    const userId = 'user_test_' + Math.random().toString(36).slice(2, 10);
     window.dataLayer.push({ user_id: userId });
     const leads = JSON.parse(localStorage.getItem('crm_leads') || '[]');
     leads.unshift({ user_id: userId, email, name, timestamp: new Date().toISOString() });
